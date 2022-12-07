@@ -23,9 +23,7 @@ for line in file.readlines():
                     filesystem["".join(pwd)] = 0
     elif line[0].isdigit():
         size = int(line.split(' ')[0])
-        adddir = pwd
-        pwdstr = "".join(pwd)
-        filesystem[pwdstr] += size
+        filesystem["".join(pwd)] += size
 
 totalsize = dict()
 # Count size
