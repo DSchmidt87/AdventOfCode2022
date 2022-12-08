@@ -5,7 +5,6 @@
 
 import numpy as np
 
-idx = 0
 with open('input.txt', 'r') as file:
     trees = np.array([[int(x) for x in line[:-1]] for line in file.readlines()])
 
